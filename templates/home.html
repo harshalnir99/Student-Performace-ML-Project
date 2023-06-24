@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <title>Machine Learning Pipeline project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        h1 {
+            padding: 15px;
+            margin: 25px;
+
+            /* other styling */
+            background-color: #33475b;
+            border-radius: 50px;
+            color: white;
+            font-family: Avenir;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">Student Exam Perormance Machine Learning  project</h1>
+    <div class="form">
+        <form action="{{url_for('prediction_data')}}" method="POST">
+            <label for="operation"></label>
+
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="gender">Select your Gender</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="gender" name="gender">
+                                <option class="placeholder" selected enabled value="">Select gender</option>
+                                <option value="0">male</option>
+                                <option value="1">female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="race_ethnicity">Select your race_ethnicity</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="race_ethnicity" name="race_ethnicity">
+                                <option class="placeholder" selected enabled value="">Select race_ethnicity</option>
+                                <option value="0">group A</option>
+                                <option value="1">group B</option>
+                                <option value="1">group C</option>
+                                <option value="1">group D</option>
+                                <option value="1">group E</option>
+                            </select>
+                        </div>                  
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="parental_level_of_education">Select your parental_level_of_education</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="parental_level_of_education" name="parental_level_of_education">
+                                <option class="placeholder" selected enabled value="">Select parental_level_of_education</option>
+                                <option value="0">bachelor's degree</option>
+                                <option value="1">some college</option>
+                                <option value="1">master's degree</option>
+                                <option value="1">associate's degree</option>
+                                <option value="1">high school</option>
+                                <option value="1">some high school</option>
+                            </select>
+                        </div>                  
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lunch">Select your lunch type</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="lunch" name="lunch">
+                                <option class="placeholder" selected enabled value="">Select lunch type</option>
+                                <option value="0">standard</option>
+                                <option value="1">free/reduced</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="test_preparation_course">Select your lunch type</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="test_preparation_course" name="test_preparation_course">
+                                <option class="placeholder" selected enabled value="">Select test_preparation_course</option>
+                                <option value="0">none</option>
+                                <option value="1">completed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="writing_score">writing_score</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="writing_score" name="writing_score" placeholder="Enter your writing_score">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reading_score">reading_score</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="reading_score" name="reading_score" placeholder="Enter your reading_score">
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    <div class="row" class="center">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+</body>
+
+</html>

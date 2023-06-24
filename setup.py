@@ -15,7 +15,7 @@ def get_requirements(filepath: str) -> List[str]:
 
 
 setup(name='ML_Pipeline_project',
-      version='0.0.1',
+      version='0.0.2',
       description='Student Performance ML project',
       author='Harshal Nirgulkar',
       author_email='harshalnir99@gmail.com',

@@ -1,0 +1,15 @@
+[ 2023-06-25 00:02:35,094 ] 27 root - INFO - Data Ingestion started
+[ 2023-06-25 00:02:35,094 ] 29 root - INFO - Data Reading using Pandas library from local system
+[ 2023-06-25 00:02:35,099 ] 31 root - INFO - Data Reading completed
+[ 2023-06-25 00:02:35,114 ] 35 root - INFO - Data splitted into train and test
+[ 2023-06-25 00:02:35,123 ] 42 root - INFO - Data Ingestion completed
+[ 2023-06-25 00:02:35,123 ] 78 root - INFO - Read train and test data completed
+[ 2023-06-25 00:02:35,146 ] 85 root - INFO - Obtaining preprocessing object
+[ 2023-06-25 00:02:35,146 ] 28 root - INFO - Data Transformnation Started
+[ 2023-06-25 00:02:35,146 ] 57 root - INFO - Categorical columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2023-06-25 00:02:35,146 ] 58 root - INFO - Numerical columns: ['writing_score', 'reading_score']
+[ 2023-06-25 00:02:35,146 ] 92 root - INFO - Splitting train data into dependent & independent features
+[ 2023-06-25 00:02:35,146 ] 96 root - INFO - Splitting train data into dependent & independent features
+[ 2023-06-25 00:02:35,177 ] 109 root - INFO - Saved preprocessing object.
+[ 2023-06-25 00:02:35,179 ] 24 root - INFO - Splitting our data into dependent & independent feature
+[ 2023-06-25 00:03:38,302 ] 88 root - INFO - best model found, Model Name is Linear Regression, r2_score: 0.8755793172192183
